@@ -23,11 +23,11 @@
     <body class="antialiased">
     <div class="container">
         <h5>Usable Paths</h5>
-        POST -> http://*/api/add-appreciation?username={text}&appreciation={text}&rating={value}
-        PUT -> http://*/api/update-appreciation/{id}?username={text}&appreciation={text}&rating={value}
-        DELETE -> http://*/api/delete-appreciation/{id}
-        GET -> http://*/api/get-all-appreciation
-        GET -> http://*/api/get-appreciation/{id}
+        <p>POST -> http://*/api/add-appreciation?username={text}&appreciation={text}&rating={value}</p>
+        <p>PUT -> http://*/api/update-appreciation/{id}?username={text}&appreciation={text}&rating={value}</p>
+        <p>DELETE -> http://*/api/delete-appreciation/{id}</p>
+        <p>GET -> http://*/api/get-all-appreciation</p>
+        <p>GET -> http://*/api/get-appreciation/{id}</p>
     </div>
     </body>
 </html>

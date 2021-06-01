@@ -1,10 +1,10 @@
 <?php
 
 namespace Database\Seeders;
-use App\Models\Appreciation;
+use App\Models\Item;
 use Illuminate\Database\Seeder;
 
-class AppreciationSeeder extends Seeder
+class ItemSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +13,6 @@ class AppreciationSeeder extends Seeder
      */
     public function run()
     {
-        Appreciation::factory()->count(50)->create();
+        Item::factory()->count(50)->create();
     }
 }

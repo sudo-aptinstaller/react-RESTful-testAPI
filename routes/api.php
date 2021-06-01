@@ -19,8 +19,8 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::post('/add-appreciation', [App\Http\Controllers\GeneralController::class, 'createAppreciation']);    
-Route::put('/update-appreciation/{id}', [App\Http\Controllers\GeneralController::class, 'updateAppreciation']);    
-Route::delete('/delete-appreciation/{id}', [App\Http\Controllers\GeneralController::class, 'deleteAppreciation']);    
-Route::get('/get-all-appreciation', [App\Http\Controllers\GeneralController::class, 'listAllAppreciation']);    
-Route::get('/get-appreciation/{id}', [App\Http\Controllers\GeneralController::class, 'listOneAppreciation']);    
+Route::post('/add-item', [App\Http\Controllers\GeneralController::class, 'createItem']);    
+Route::put('/update-item/{id}', [App\Http\Controllers\GeneralController::class, 'updateItem']);    
+Route::delete('/delete-item/{id}', [App\Http\Controllers\GeneralController::class, 'deleteItem']);    
+Route::get('/get-all-item', [App\Http\Controllers\GeneralController::class, 'listAllItem']);    
+Route::get('/get-item/{id}', [App\Http\Controllers\GeneralController::class, 'listOneItem']);    

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAppreciationsTable extends Migration
+class CreateItemsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateAppreciationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('appreciations', function (Blueprint $table) {
+        Schema::create('items', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('user');
-            $table->longText('appreciation');
-            $table->integer('rating');
+            $table->string('item_name');
+            $table->longText('item_description');
+            $table->string('item_deadline');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateAppreciationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('appreciations');
+        Schema::dropIfExists('items');
     }
 }

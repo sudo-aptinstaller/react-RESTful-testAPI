@@ -2,18 +2,18 @@
 
 namespace Database\Factories;
 
-use App\Models\Appreciation;
+use App\Models\Item;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
-class AppreciationFactory extends Factory
+class ItemFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Appreciation::class;
+    protected $model = Item::class;
 
     /**
      * Define the model's default state.

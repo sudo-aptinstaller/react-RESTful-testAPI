@@ -16,3 +16,7 @@
   - DELETE -> http://*/api/delete-item/{id}
   - GET -> http://*/api/get-all-item
   - GET -> http://*/api/get-item/{id}
+
+
+## _Example (php artisan serve -> PHP 7.4.10 Development Server (http://127.0.0.1:8000) started)
+ - POST -> http://127.0.0.1:8000/api/add-item?task_name=Shopping&task_description=Need To Go Shopping Asap.&task_deadline=2021-02-25

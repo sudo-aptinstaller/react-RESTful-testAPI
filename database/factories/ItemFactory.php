@@ -23,9 +23,9 @@ class ItemFactory extends Factory
     public function definition()
     {
         return [
-            'user' => $this->faker->name,
-            'appreciation' => $this->faker->text,
-            'rating' => rand(0,5),
+            'item_name' => $this->faker->name,
+            'item_description' => $this->faker->text,
+            'item_deadline' => $this->faker->date('Y-m-d'),
         ];
     }
 

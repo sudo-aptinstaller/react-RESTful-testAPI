@@ -32,7 +32,7 @@ class GeneralController extends Controller
         return response()->json('Item Deleted Successfully - #'.$id);
     }
     public function listAllItem(Request $request){
-        $Item = Item::all();
+        $Item = Item::orderBy('created_at', 'asc')->paginate(10);
         return response()->json($Item);
     }
     public function listOneItem(Request $request, $id){
